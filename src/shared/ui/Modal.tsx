@@ -45,12 +45,12 @@ export function Modal({
   if (!open) return null
 
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+    <div className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-4" role="dialog" aria-modal="true">
       <div
         className="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]"
         onClick={closeOnOverlay ? onClose : undefined}
       />
-      <div className={cn('relative flex max-h-[90vh] w-full flex-col overflow-hidden rounded-2xl bg-white shadow-2xl', SIZES[size])}>
+      <div className={cn('relative flex max-h-[92vh] w-full flex-col overflow-hidden rounded-t-2xl bg-white shadow-2xl sm:rounded-2xl', SIZES[size])}>
         {(title || !hideClose) && (
           <div className="flex items-start justify-between gap-4 border-b border-surface-line px-6 py-4">
             <div className="min-w-0">

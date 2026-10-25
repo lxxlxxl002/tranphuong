@@ -55,7 +55,7 @@ export function DepartmentTable() {
 
   return (
     <Card>
-      <div className="overflow-x-auto px-1 py-2 scrollbar-thin">
+      <div className="overflow-x-auto px-1 py-2 scrollbar-thin [-webkit-overflow-scrolling:touch]">
         <table className="w-full min-w-[760px] border-collapse text-sm">
           <thead>
             <tr className="border-b border-surface-line">

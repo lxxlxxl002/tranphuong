@@ -41,7 +41,7 @@ export default function UsersList() {
         <StatCard icon={Lock} label="Đã khóa" value={stats.locked} unit={percentOf(stats.locked, stats.total)} tone="rose" loading={isLoading} />
       </div>
 
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_320px]">
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
         <UserTable />
         <UserDetailPanel />
       </div>

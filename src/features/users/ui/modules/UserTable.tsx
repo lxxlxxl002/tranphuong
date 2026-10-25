@@ -137,7 +137,7 @@ export function UserTable() {
           }
         />
       ) : (
-        <div className="px-1 pb-2 pt-1">
+        <div className="overflow-x-auto px-1 pb-2 pt-1 [-webkit-overflow-scrolling:touch]">
           <Table
             columns={columns}
             data={list.pageUsers}

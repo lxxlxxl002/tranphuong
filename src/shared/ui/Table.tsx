@@ -42,7 +42,7 @@ export function Table<T>({
 }: TableProps<T>) {
   const cellPad = dense ? 'px-4 py-3' : 'px-4 py-4'
   return (
-    <div className={cn('overflow-x-auto scrollbar-thin', className)}>
+    <div className={cn('overflow-x-auto scrollbar-thin [scrollbar-gutter:stable] [-webkit-overflow-scrolling:touch]', className)}>
       <table className="w-full min-w-full border-collapse text-sm">
         <thead>
           <tr className="border-b border-surface-line">

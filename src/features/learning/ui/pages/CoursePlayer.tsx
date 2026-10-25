@@ -51,7 +51,7 @@ export default function CoursePlayer() {
           </Button>
         }
       />
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_360px]">
+      <div className="grid gap-4 sm:gap-5 xl:grid-cols-[minmax(0,1fr)_360px]">
         <div className="min-w-0">
           {p.lesson ? (
             <LessonView
@@ -179,7 +179,7 @@ function PlayerSkeleton() {
   return (
     <div className="space-y-5">
       <Skeleton className="h-8 w-80" />
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_360px]">
+      <div className="grid gap-4 sm:gap-5 xl:grid-cols-[minmax(0,1fr)_360px]">
         <Skeleton className="aspect-video w-full rounded-2xl" />
         <Skeleton className="h-96 w-full rounded-2xl" />
       </div>

@@ -126,9 +126,9 @@ export function QuizPanel({ courseId }: { courseId: string }) {
   } else {
     const question = q.currentQuestion
     body = (
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_300px]">
+      <div className="grid gap-4 sm:gap-5 xl:grid-cols-[minmax(0,1fr)_300px]">
         <div className="min-w-0 space-y-4">
-          <Card className="flex flex-wrap items-center justify-between gap-3 px-5 py-3.5">
+          <Card className="sticky top-16 z-10 flex flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-5 sm:py-3.5">
             <div className="min-w-0">
               <p className="truncate text-sm font-semibold text-ink">{q.quiz.title}</p>
               <p className="text-xs text-ink-muted">

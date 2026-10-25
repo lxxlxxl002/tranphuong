@@ -43,7 +43,7 @@ export function AppLayout() {
       <Sidebar open={open} mobileOpen={mobileOpen} onCloseMobile={() => setMobileOpen(false)} />
       <div className={cn('flex min-h-screen flex-col transition-[padding] duration-300', open && 'lg:pl-[264px]')}>
         <Topbar onToggleSidebar={toggle} />
-        <main className="flex-1 bg-app-gradient px-4 py-5 lg:px-7">
+        <main className="flex-1 bg-app-gradient px-3 py-4 sm:px-4 sm:py-5 lg:px-7">
           <Breadcrumbs />
           <Outlet />
         </main>
