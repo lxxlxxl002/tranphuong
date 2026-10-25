@@ -1,0 +1,6 @@
+export { RoleCard } from './components/RoleCard'
+export { PermissionToggle } from './components/PermissionToggle'
+export { RoleList } from './modules/RoleList'
+export { PermissionMatrix } from './modules/PermissionMatrix'
+export { RoleFormModal } from './modules/RoleFormModal'
+export { default as PermissionsMatrixPage } from './pages/Matrix'

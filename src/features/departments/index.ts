@@ -1,0 +1,6 @@
+export type * from './model/types'
+export { DEPARTMENTS_QUERY_KEYS } from './model/constants'
+export { departmentService } from './services/departmentService'
+export { useDepartments } from './hooks/useDepartments'
+export { useDepartmentMutation } from './hooks/useDepartmentMutation'
+export { departmentsRoutes } from './routes'

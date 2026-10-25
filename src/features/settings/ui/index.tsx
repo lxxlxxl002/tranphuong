@@ -1,0 +1,5 @@
+export { SettingField } from './components/SettingField'
+export { GeneralSettings } from './modules/GeneralSettings'
+export { SupportContactSettings } from './modules/SupportContactSettings'
+export { BrandingSettings } from './modules/BrandingSettings'
+export { default as SettingsPage } from './pages/Settings'

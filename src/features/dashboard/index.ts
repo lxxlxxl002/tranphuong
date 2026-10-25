@@ -1,0 +1,7 @@
+export type * from './model/types'
+export { DASHBOARD_QUERY_KEYS } from './model/constants'
+export { dashboardService } from './services/dashboardService'
+export { useDashboardStats } from './hooks/useDashboardStats'
+export { useDeptStats } from './hooks/useDeptStats'
+export { StatGrid } from './ui/components/StatGrid'
+export { dashboardRoutes } from './routes'

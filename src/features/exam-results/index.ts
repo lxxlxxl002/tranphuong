@@ -1,0 +1,8 @@
+export type * from './model/types'
+export { EXAM_RESULTS_QUERY_KEYS } from './model/constants'
+export { resultService } from './services/resultService'
+export { useResultList } from './hooks/useResultList'
+export { useResultDetail } from './hooks/useResultDetail'
+export { ResultBadge } from './ui/components/ResultBadge'
+export { resultDetailPath } from './lib/utils'
+export { examResultsRoutes } from './routes'
