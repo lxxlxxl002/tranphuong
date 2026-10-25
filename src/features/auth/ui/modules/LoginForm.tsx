@@ -6,7 +6,7 @@ import { Button } from '@/shared/ui/Button'
 import { Input } from '@/shared/ui/Input'
 import { useLogin } from '../../hooks/useLogin'
 import { validateLogin, type LoginErrors } from '../../lib/validators'
-import { AUTH_CONFIG } from '../../config/auth.config'
+import { AUTH_CONFIG, MOCK_ACCOUNTS } from '../../config/auth.config'
 
 export function LoginForm() {
   const login = useLogin()
@@ -86,6 +86,28 @@ export function LoginForm() {
         </button>
       </div>
 
+      {AUTH_CONFIG.mockAuth && (
+        <div className="rounded-lg border border-brand-100 bg-brand-50/60 px-3.5 py-3 text-xs text-ink-soft">
+          <p className="mb-1.5 font-semibold text-brand-700">Tài khoản demo (bấm để điền)</p>
+          <div className="flex flex-wrap gap-1.5">
+            {MOCK_ACCOUNTS.map((a) => (
+              <button
+                key={a.email}
+                type="button"
+                onClick={() => {
+                  setEmail(a.email)
+                  setPassword(a.password)
+                  setErrors({})
+                }}
+                className="rounded-md bg-white px-2 py-1 font-medium text-brand-700 ring-1 ring-brand-200 transition hover:bg-brand-100"
+              >
+                {a.email.split('@')[0]}
+              </button>
+            ))}
+          </div>
+          <p className="mt-1.5 text-ink-muted">Mật khẩu chung: admin123</p>
+        </div>
+      )}
       <Button type="submit" size="lg" fullWidth loading={login.isPending} leftIcon={<LogIn />}>
         Đăng nhập
       </Button>
