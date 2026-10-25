@@ -27,6 +27,6 @@ export const DASHBOARD_CONFIG = {
   staleTime: 60_000,
   demoDelayMs: 300,
   /** Ảnh hero thật (đặt trong /public) — để trống dùng minh họa vẽ bằng code */
-  heroImageUrl: (import.meta.env.VITE_HERO_IMAGE_URL as string | undefined) ?? '',
+  heroImageUrl: (import.meta.env.VITE_HERO_IMAGE_URL as string | undefined) || '/hero-banner.jpg',
   demo: { stats, deptStats }
 }
