@@ -9,7 +9,7 @@ export const AUTH_CONFIG = {
   supportName: import.meta.env.VITE_SUPPORT_NAME || 'Liên hệ Phòng 1',
   supportPhone: import.meta.env.VITE_SUPPORT_PHONE || '0822 116 166',
   forgotPasswordHint: `Vui lòng liên hệ quản trị viên hệ thống (${import.meta.env.VITE_SUPPORT_NAME || 'Phòng 1'} – ${import.meta.env.VITE_SUPPORT_PHONE || '0822 116 166'}) để được cấp lại mật khẩu.`,
-  mockAuth: import.meta.env.VITE_MOCK_AUTH === 'true'
+  mockAuth: import.meta.env.VITE_MOCK_AUTH === 'true' || !import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_BASE_URL.includes('YOUR_DEPLOYMENT_ID')
 } as const
 
 export interface MockAccount {
